@@ -1,10 +1,11 @@
+import React from "react";
 
-const About = ({image = "https://via.placeholder.com/215", abt}) => {
+function About({ about, image = "https://via.placeholder.com/215"}) {
     // console.log(image, abt)
     return(
         <aside>
             <img src={ image } alt="blog logo"></img>
-            <p>{ abt }</p>
+            <p>{ about }</p>
         </aside>
     )
 }
